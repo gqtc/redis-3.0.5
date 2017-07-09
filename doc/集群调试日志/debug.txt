@@ -1,0 +1,43 @@
+redis-server /root/test-redis-cluster/6379/redis.conf 
+redis-server /root/test-redis-cluster/6380/redis.conf 
+redis-server /root/test-redis-cluster/6381/redis.conf 
+redis-server /root/test-redis-cluster/7379/redis.conf 
+redis-server /root/test-redis-cluster/7380/redis.conf 
+redis-server /root/test-redis-cluster/7381/redis.conf 
+
+=================================
+rm -f /root/test-redis-cluster/6379/nodes.conf
+rm -f /root/test-redis-cluster/6379/*.log
+rm -f /root/test-redis-cluster/6379/dump.rdb
+
+rm -f /root/test-redis-cluster/6380/nodes.conf
+rm -f /root/test-redis-cluster/6380/*.log
+rm -f /root/test-redis-cluster/6380/dump.rdb
+
+rm -f /root/test-redis-cluster/6381/nodes.conf
+rm -f /root/test-redis-cluster/6381/*.log
+rm -f /root/test-redis-cluster/6381/dump.rdb
+
+rm -f /root/test-redis-cluster/7379/nodes.conf
+rm -f /root/test-redis-cluster/7379/*.log
+rm -f /root/test-redis-cluster/7379/dump.rdb
+
+rm -f /root/test-redis-cluster/7380/nodes.conf
+rm -f /root/test-redis-cluster/7380/*.log
+rm -f /root/test-redis-cluster/7380/dump.rdb
+
+rm -f /root/test-redis-cluster/7381/nodes.conf
+rm -f /root/test-redis-cluster/7381/*.log
+rm -f /root/test-redis-cluster/7381/dump.rdb
+===============================================
+sz /root/test-redis-cluster/6379/*.log
+sz /root/test-redis-cluster/6380/*.log
+sz /root/test-redis-cluster/6381/*.log
+sz /root/test-redis-cluster/7379/*.log
+sz /root/test-redis-cluster/7380/*.log
+sz /root/test-redis-cluster/7381/*.log
+
+===============================================
+
+/root/redis/redis-trib.rb create --replicas 1 192.168.1.104:6379 192.168.1.104:6380 192.168.1.104:6381 192.168.1.104:7379 192.168.1.104:7380 192.168.1.104:7381
+

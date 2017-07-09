@@ -1,0 +1,511 @@
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.5 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 7379
+ |    `-._   `._    /     _.-'    |     PID: 3571
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+3571:S 03 Jun 09:42:06.825 # Server started, Redis version 3.0.5
+3571:S 03 Jun 09:42:06.825 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+3571:S 03 Jun 09:42:06.825 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+3571:S 03 Jun 09:42:06.828 * DB loaded from disk: 0.003 seconds
+3571:S 03 Jun 09:42:06.829 * The server is now ready to accept connections on port 7379
+3571:S 03 Jun 09:42:07.826 * Connecting to MASTER 10.1.80.152:6379
+3571:S 03 Jun 09:42:07.827 * MASTER <-> SLAVE sync started
+3571:S 03 Jun 09:42:07.827 * Non blocking connect for SYNC fired the event.
+3571:S 03 Jun 09:42:07.828 * Master replied to PING, replication can continue...
+3571:S 03 Jun 09:42:07.828 * Partial resynchronization not possible (no cached master)
+3571:S 03 Jun 09:42:07.857 * Full resync from master: a6ccaa2592ed1ad526452aa84cf6ec87f647dbee:1
+3571:S 03 Jun 09:42:07.882 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3571:S 03 Jun 09:42:07.882 * MASTER <-> SLAVE sync: Flushing old data
+3571:S 03 Jun 09:42:07.883 * MASTER <-> SLAVE sync: Loading DB in memory
+3571:S 03 Jun 09:42:07.883 * MASTER <-> SLAVE sync: Finished with success
+3571:M 03 Jun 09:46:20.249 # Connection with master lost.
+3571:M 03 Jun 09:46:20.249 * Caching the disconnected master state.
+3571:M 03 Jun 09:46:20.249 * Discarding previously cached master state.
+3571:M 03 Jun 09:46:20.250 * MASTER MODE enabled (user request from 'id=7 addr=10.1.80.152:32989 fd=8 name=sentinel-5456554c-cmd age=124 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=0 qbuf-free=32768 obl=36 oll=0 omem=0 events=rw cmd=exec')
+3571:M 03 Jun 09:46:20.271 # CONFIG REWRITE executed with success.
+3571:M 03 Jun 09:47:40.554 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:40.554 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:40.554 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:40.588 * Background saving started by pid 3814
+3814:C 03 Jun 09:47:40.602 * DB saved on disk
+3814:C 03 Jun 09:47:40.602 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:40.610 * Background saving terminated with success
+3571:M 03 Jun 09:47:40.613 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:40.613 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:41.579 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:41.579 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:41.579 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:41.581 * Background saving started by pid 3815
+3815:C 03 Jun 09:47:41.593 * DB saved on disk
+3815:C 03 Jun 09:47:41.594 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:41.632 * Background saving terminated with success
+3571:M 03 Jun 09:47:41.637 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:41.637 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:42.599 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:42.599 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:42.599 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:42.600 * Background saving started by pid 3816
+3816:C 03 Jun 09:47:42.608 * DB saved on disk
+3816:C 03 Jun 09:47:42.609 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:42.655 * Background saving terminated with success
+3571:M 03 Jun 09:47:42.661 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:42.661 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:43.625 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:43.625 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:43.625 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:43.626 * Background saving started by pid 3817
+3817:C 03 Jun 09:47:43.635 * DB saved on disk
+3817:C 03 Jun 09:47:43.635 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:43.678 * Background saving terminated with success
+3571:M 03 Jun 09:47:43.684 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:43.684 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:44.642 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:44.642 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:44.642 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:44.643 * Background saving started by pid 3818
+3818:C 03 Jun 09:47:44.651 * DB saved on disk
+3818:C 03 Jun 09:47:44.651 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:44.701 * Background saving terminated with success
+3571:M 03 Jun 09:47:44.706 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:44.706 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:45.663 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:45.663 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:45.663 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:45.664 * Background saving started by pid 3819
+3819:C 03 Jun 09:47:45.672 * DB saved on disk
+3819:C 03 Jun 09:47:45.673 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:45.723 * Background saving terminated with success
+3571:M 03 Jun 09:47:45.729 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:45.729 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:46.682 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:46.682 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:46.682 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:46.684 * Background saving started by pid 3820
+3820:C 03 Jun 09:47:46.692 * DB saved on disk
+3820:C 03 Jun 09:47:46.693 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:46.749 * Background saving terminated with success
+3571:M 03 Jun 09:47:46.754 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:46.754 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:47.703 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:47.703 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:47.703 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:47.704 * Background saving started by pid 3821
+3821:C 03 Jun 09:47:47.713 * DB saved on disk
+3821:C 03 Jun 09:47:47.714 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:47.771 * Background saving terminated with success
+3571:M 03 Jun 09:47:47.777 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:47.777 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:48.721 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:48.721 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:48.721 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:48.722 * Background saving started by pid 3822
+3822:C 03 Jun 09:47:48.730 * DB saved on disk
+3822:C 03 Jun 09:47:48.731 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:48.799 * Background saving terminated with success
+3571:M 03 Jun 09:47:48.805 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:48.805 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:49.747 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:49.747 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:49.747 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:49.748 * Background saving started by pid 3823
+3823:C 03 Jun 09:47:49.753 * DB saved on disk
+3823:C 03 Jun 09:47:49.753 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:49.802 # master feed slave PUBLISH
+3571:M 03 Jun 09:47:49.802 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:47:49.802 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:47:49.824 * Background saving terminated with success
+3571:M 03 Jun 09:47:49.830 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:49.830 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:50.769 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:50.769 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:50.769 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:50.770 * Background saving started by pid 3824
+3824:C 03 Jun 09:47:50.779 * DB saved on disk
+3824:C 03 Jun 09:47:50.779 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:50.847 * Background saving terminated with success
+3571:M 03 Jun 09:47:50.853 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:50.853 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:51.794 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:51.794 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:51.794 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:51.795 * Background saving started by pid 3825
+3825:C 03 Jun 09:47:51.805 * DB saved on disk
+3825:C 03 Jun 09:47:51.806 * RDB: 6 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:51.855 # master feed slave PUBLISH
+3571:M 03 Jun 09:47:51.855 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:47:51.855 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:47:51.873 * Background saving terminated with success
+3571:M 03 Jun 09:47:51.878 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:51.878 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:52.817 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:52.817 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:52.817 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:52.818 * Background saving started by pid 3826
+3826:C 03 Jun 09:47:52.827 * DB saved on disk
+3826:C 03 Jun 09:47:52.828 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:52.895 * Background saving terminated with success
+3571:M 03 Jun 09:47:52.901 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:52.901 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:53.875 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:53.875 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:53.875 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:53.876 * Background saving started by pid 3827
+3827:C 03 Jun 09:47:53.886 * DB saved on disk
+3827:C 03 Jun 09:47:53.887 * RDB: 6 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:53.951 * Background saving terminated with success
+3571:M 03 Jun 09:47:53.956 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:53.956 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:54.967 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:54.967 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:54.967 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:54.968 * Background saving started by pid 3829
+3829:C 03 Jun 09:47:54.978 * DB saved on disk
+3829:C 03 Jun 09:47:54.979 * RDB: 6 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:55.028 * Background saving terminated with success
+3571:M 03 Jun 09:47:55.033 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:55.033 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:56.032 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:56.032 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:56.032 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:56.033 * Background saving started by pid 3830
+3830:C 03 Jun 09:47:56.042 * DB saved on disk
+3830:C 03 Jun 09:47:56.043 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:56.074 # master feed slave PUBLISH
+3571:M 03 Jun 09:47:56.074 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:47:56.074 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:47:56.093 * Background saving terminated with success
+3571:M 03 Jun 09:47:56.098 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:56.099 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:57.050 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:57.050 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:57.050 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:57.051 * Background saving started by pid 3831
+3831:C 03 Jun 09:47:57.061 * DB saved on disk
+3831:C 03 Jun 09:47:57.061 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:57.113 * Background saving terminated with success
+3571:M 03 Jun 09:47:57.119 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:57.120 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:58.073 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:58.073 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:58.073 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:58.074 * Background saving started by pid 3832
+3832:C 03 Jun 09:47:58.082 * DB saved on disk
+3832:C 03 Jun 09:47:58.082 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:58.110 # master feed slave PUBLISH
+3571:M 03 Jun 09:47:58.110 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:47:58.110 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:47:58.136 * Background saving terminated with success
+3571:M 03 Jun 09:47:58.142 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:58.142 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:47:59.095 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:47:59.095 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:47:59.095 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:47:59.097 * Background saving started by pid 3833
+3833:C 03 Jun 09:47:59.105 * DB saved on disk
+3833:C 03 Jun 09:47:59.105 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:47:59.157 * Background saving terminated with success
+3571:M 03 Jun 09:47:59.163 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:47:59.163 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:00.116 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:00.116 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:00.116 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:00.117 * Background saving started by pid 3834
+3834:C 03 Jun 09:48:00.125 * DB saved on disk
+3834:C 03 Jun 09:48:00.126 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:00.150 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:00.150 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:00.150 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:00.182 * Background saving terminated with success
+3571:M 03 Jun 09:48:00.187 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:00.187 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:01.142 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:01.142 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:01.142 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:01.143 * Background saving started by pid 3835
+3835:C 03 Jun 09:48:01.152 * DB saved on disk
+3835:C 03 Jun 09:48:01.152 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:01.207 * Background saving terminated with success
+3571:M 03 Jun 09:48:01.213 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:01.213 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:02.172 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:02.172 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:02.172 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:02.173 * Background saving started by pid 3860
+3860:C 03 Jun 09:48:02.184 * DB saved on disk
+3860:C 03 Jun 09:48:02.185 * RDB: 6 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:02.235 * Background saving terminated with success
+3571:M 03 Jun 09:48:02.241 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:02.241 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:03.191 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:03.191 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:03.191 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:03.193 * Background saving started by pid 3865
+3865:C 03 Jun 09:48:03.201 * DB saved on disk
+3865:C 03 Jun 09:48:03.202 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:03.255 * Background saving terminated with success
+3571:M 03 Jun 09:48:03.261 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:03.261 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:04.215 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:04.215 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:04.215 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:04.216 * Background saving started by pid 3866
+3866:C 03 Jun 09:48:04.224 * DB saved on disk
+3866:C 03 Jun 09:48:04.225 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:04.280 * Background saving terminated with success
+3571:M 03 Jun 09:48:04.286 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:04.286 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:05.237 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:05.237 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:05.237 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:05.238 * Background saving started by pid 3867
+3867:C 03 Jun 09:48:05.246 * DB saved on disk
+3867:C 03 Jun 09:48:05.247 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:05.303 * Background saving terminated with success
+3571:M 03 Jun 09:48:05.309 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:05.309 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:06.260 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:06.260 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:06.260 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:06.261 * Background saving started by pid 3868
+3868:C 03 Jun 09:48:06.270 * DB saved on disk
+3868:C 03 Jun 09:48:06.271 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:06.326 * Background saving terminated with success
+3571:M 03 Jun 09:48:06.331 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:06.332 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:07.280 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:07.280 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:07.280 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:07.281 * Background saving started by pid 3869
+3869:C 03 Jun 09:48:07.290 * DB saved on disk
+3869:C 03 Jun 09:48:07.291 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:07.346 * Background saving terminated with success
+3571:M 03 Jun 09:48:07.351 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:07.351 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:08.302 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:08.302 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:08.302 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:08.303 * Background saving started by pid 3870
+3870:C 03 Jun 09:48:08.312 * DB saved on disk
+3870:C 03 Jun 09:48:08.312 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:08.366 * Background saving terminated with success
+3571:M 03 Jun 09:48:08.372 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:08.372 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:09.322 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:09.322 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:09.322 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:09.323 * Background saving started by pid 3872
+3872:C 03 Jun 09:48:09.333 * DB saved on disk
+3872:C 03 Jun 09:48:09.334 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:09.383 * Background saving terminated with success
+3571:M 03 Jun 09:48:09.389 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:09.389 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:10.337 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:10.337 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:10.337 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:10.338 * Background saving started by pid 3873
+3873:C 03 Jun 09:48:10.347 * DB saved on disk
+3873:C 03 Jun 09:48:10.348 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:10.403 * Background saving terminated with success
+3571:M 03 Jun 09:48:10.409 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:10.409 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:11.355 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:11.355 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:11.355 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:11.357 * Background saving started by pid 3874
+3874:C 03 Jun 09:48:11.365 * DB saved on disk
+3874:C 03 Jun 09:48:11.366 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:11.423 * Background saving terminated with success
+3571:M 03 Jun 09:48:11.428 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:11.429 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:12.374 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:12.374 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:12.374 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:12.376 * Background saving started by pid 3875
+3875:C 03 Jun 09:48:12.387 * DB saved on disk
+3875:C 03 Jun 09:48:12.387 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:12.448 * Background saving terminated with success
+3571:M 03 Jun 09:48:12.454 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:12.454 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:13.454 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:13.454 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:13.454 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:13.455 * Background saving started by pid 3876
+3876:C 03 Jun 09:48:13.464 * DB saved on disk
+3876:C 03 Jun 09:48:13.464 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:13.531 * Background saving terminated with success
+3571:M 03 Jun 09:48:13.536 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:13.536 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:14.499 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:14.499 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:14.499 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:14.500 * Background saving started by pid 3877
+3877:C 03 Jun 09:48:14.508 * DB saved on disk
+3877:C 03 Jun 09:48:14.509 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:14.562 * Background saving terminated with success
+3571:M 03 Jun 09:48:14.567 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:14.568 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:15.521 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:15.521 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:15.521 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:15.523 * Background saving started by pid 3879
+3879:C 03 Jun 09:48:15.532 * DB saved on disk
+3879:C 03 Jun 09:48:15.532 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:15.581 * Background saving terminated with success
+3571:M 03 Jun 09:48:15.586 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:15.586 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:16.550 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:16.550 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:16.550 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:16.551 * Background saving started by pid 3880
+3880:C 03 Jun 09:48:16.560 * DB saved on disk
+3880:C 03 Jun 09:48:16.561 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:16.605 * Background saving terminated with success
+3571:M 03 Jun 09:48:16.608 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:16.608 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:17.571 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:17.571 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:17.571 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:17.572 * Background saving started by pid 3881
+3881:C 03 Jun 09:48:17.580 * DB saved on disk
+3881:C 03 Jun 09:48:17.581 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:17.625 * Background saving terminated with success
+3571:M 03 Jun 09:48:17.631 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:17.631 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:18.593 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:18.593 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:18.593 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:18.595 * Background saving started by pid 3882
+3882:C 03 Jun 09:48:18.605 * DB saved on disk
+3882:C 03 Jun 09:48:18.605 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:18.644 * Background saving terminated with success
+3571:M 03 Jun 09:48:18.650 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:18.650 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:19.616 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:19.616 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:19.616 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:19.617 * Background saving started by pid 3883
+3883:C 03 Jun 09:48:19.626 * DB saved on disk
+3883:C 03 Jun 09:48:19.627 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:19.667 * Background saving terminated with success
+3571:M 03 Jun 09:48:19.672 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:19.673 # Connection with slave 10.1.80.152:6379 lost.
+3571:M 03 Jun 09:48:20.637 * Slave 10.1.80.152:6379 asks for synchronization
+3571:M 03 Jun 09:48:20.637 * Full resync requested by slave 10.1.80.152:6379
+3571:M 03 Jun 09:48:20.637 * Starting BGSAVE for SYNC with target: disk
+3571:M 03 Jun 09:48:20.638 * Background saving started by pid 3884
+3884:C 03 Jun 09:48:20.643 * DB saved on disk
+3884:C 03 Jun 09:48:20.644 * RDB: 4 MB of memory used by copy-on-write
+3571:M 03 Jun 09:48:20.691 * Background saving terminated with success
+3571:M 03 Jun 09:48:20.693 * Synchronization with slave 10.1.80.152:6379 succeeded
+3571:M 03 Jun 09:48:20.702 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:20.702 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:20.702 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:20.892 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:20.892 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:20.892 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:22.772 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:22.772 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:22.772 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:22.947 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:22.947 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:22.947 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:24.785 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:24.785 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:24.785 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:24.965 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:24.965 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:24.965 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:26.792 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:26.792 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:26.792 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:26.997 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:26.997 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:26.997 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:27.524 # master feed slave PING
+3571:M 03 Jun 09:48:28.820 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:28.820 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:28.820 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:29.038 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:29.038 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:29.038 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:30.832 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:30.832 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:30.832 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:31.054 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:31.054 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:31.054 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:32.908 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:32.908 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:32.908 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:33.081 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:33.081 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:33.081 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:34.971 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:34.971 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:34.971 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:35.128 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:35.128 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:35.128 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:37.071 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:37.071 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:37.071 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:37.152 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:37.153 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:37.153 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:37.865 # master feed slave PING
+3571:M 03 Jun 09:48:39.091 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:39.091 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:39.091 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:39.200 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:39.200 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:39.200 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:41.107 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:41.108 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:41.108 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:41.343 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:41.343 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:41.343 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:43.132 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:43.132 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:43.132 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:43.410 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:43.410 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:43.410 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:45.167 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:45.167 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:45.167 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:45.557 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:45.557 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:45.557 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:47.337 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:47.337 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:47.337 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:47.634 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:47.634 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:47.634 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:48.204 # master feed slave PING
+3571:M 03 Jun 09:48:49.417 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:49.417 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:49.417 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,1,mymaster,10.1.80.152,7379,1
+3571:M 03 Jun 09:48:49.696 # master feed slave PUBLISH
+3571:M 03 Jun 09:48:49.696 # master feed slave __sentinel__:hello
+3571:M 03 Jun 09:48:49.697 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,1,mymaster,10.1.80.152,7379,1
+3571:signal-handler (1464918530) Received SIGTERM scheduling shutdown...
+3571:M 03 Jun 09:48:50.852 # User requested shutdown...
+3571:M 03 Jun 09:48:50.853 * Saving the final RDB snapshot before exiting.
+3571:M 03 Jun 09:48:50.854 * DB saved on disk
+3571:M 03 Jun 09:48:50.854 * Removing the pid file.
+3571:M 03 Jun 09:48:50.854 # Redis is now ready to exit, bye bye...

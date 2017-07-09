@@ -1,0 +1,663 @@
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.5 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3537
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+3537:M 03 Jun 09:41:58.422 # Server started, Redis version 3.0.5
+3537:M 03 Jun 09:41:58.423 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+3537:M 03 Jun 09:41:58.424 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+3537:M 03 Jun 09:41:58.426 * DB loaded from disk: 0.002 seconds
+3537:M 03 Jun 09:41:58.426 * The server is now ready to accept connections on port 6379
+3537:M 03 Jun 09:42:07.828 * Slave 10.1.80.152:7379 asks for synchronization
+3537:M 03 Jun 09:42:07.828 * Full resync requested by slave 10.1.80.152:7379
+3537:M 03 Jun 09:42:07.828 * Starting BGSAVE for SYNC with target: disk
+3537:M 03 Jun 09:42:07.853 * Background saving started by pid 3574
+3574:C 03 Jun 09:42:07.860 * DB saved on disk
+3574:C 03 Jun 09:42:07.860 * RDB: 4 MB of memory used by copy-on-write
+3537:M 03 Jun 09:42:07.881 * Background saving terminated with success
+3537:M 03 Jun 09:42:07.882 * Synchronization with slave 10.1.80.152:7379 succeeded
+3537:M 03 Jun 09:42:09.727 # master feed slave PING
+3537:M 03 Jun 09:42:18.755 # master feed slave PUBLISH
+3537:M 03 Jun 09:42:18.755 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:42:18.755 # master feed slave 10.1.80.152,6379,16244016f6f8c987ca481676ba0f96649141276b,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:42:19.954 # master feed slave PING
+3537:M 03 Jun 09:42:30.324 # master feed slave PING
+3537:M 03 Jun 09:42:40.893 # master feed slave PING
+3537:M 03 Jun 09:42:51.120 # master feed slave PING
+3537:M 03 Jun 09:43:01.367 # master feed slave PING
+3537:M 03 Jun 09:43:11.602 # master feed slave PING
+3537:M 03 Jun 09:43:21.833 # master feed slave PING
+3537:M 03 Jun 09:43:32.070 # master feed slave PING
+3537:M 03 Jun 09:43:42.308 # master feed slave PING
+3537:M 03 Jun 09:43:52.571 # master feed slave PING
+3537:M 03 Jun 09:44:02.804 # master feed slave PING
+3537:M 03 Jun 09:44:13.024 # master feed slave PING
+3537:M 03 Jun 09:44:14.689 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:14.689 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:14.689 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:16.864 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:16.864 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:16.864 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:18.581 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:18.582 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:18.582 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:18.896 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:18.896 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:18.897 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:20.611 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:20.612 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:20.612 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:20.982 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:20.983 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:20.983 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:22.641 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:22.642 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:22.642 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:23.056 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:23.056 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:23.056 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:23.288 # master feed slave PING
+3537:M 03 Jun 09:44:24.694 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:24.694 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:24.694 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:25.099 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:25.099 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:25.099 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:26.716 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:26.716 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:26.716 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:27.245 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:27.245 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:27.245 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:28.738 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:28.738 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:28.738 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:29.361 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:29.361 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:29.361 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:30.770 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:30.770 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:30.770 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:31.503 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:31.503 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:31.503 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:32.801 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:32.801 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:32.801 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:33.571 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:33.571 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:33.571 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:33.808 # master feed slave PING
+3537:M 03 Jun 09:44:34.846 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:34.846 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:34.846 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:35.584 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:35.584 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:35.584 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:36.901 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:36.901 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:36.901 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:37.634 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:37.634 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:37.634 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:38.906 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:38.906 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:38.906 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:39.713 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:39.713 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:39.713 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:40.943 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:40.943 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:40.943 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:41.795 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:41.796 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:41.796 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:42.975 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:42.976 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:42.976 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:43.903 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:43.903 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:43.903 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:44.008 # master feed slave PING
+3537:M 03 Jun 09:44:45.065 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:45.065 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:45.065 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:45.944 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:45.944 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:45.944 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:47.149 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:47.149 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:47.149 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:47.956 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:47.956 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:47.956 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:49.183 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:49.183 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:49.183 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:49.958 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:49.958 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:49.958 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:51.258 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:51.258 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:51.258 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:51.960 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:51.960 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:51.960 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:53.323 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:53.323 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:53.323 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:54.021 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:54.021 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:54.021 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:54.218 # master feed slave PING
+3537:M 03 Jun 09:44:55.386 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:55.386 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:55.386 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:56.090 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:56.091 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:56.091 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:57.421 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:57.421 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:57.421 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:58.186 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:58.186 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:58.186 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:44:59.431 # master feed slave PUBLISH
+3537:M 03 Jun 09:44:59.431 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:44:59.432 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:00.264 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:00.264 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:00.264 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:01.499 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:01.499 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:01.499 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:02.306 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:02.306 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:02.306 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:03.549 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:03.549 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:03.549 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:04.314 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:04.314 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:04.314 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:04.415 # master feed slave PING
+3537:M 03 Jun 09:45:05.585 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:05.585 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:05.585 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:06.399 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:06.399 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:06.399 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:07.591 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:07.591 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:07.591 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:08.410 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:08.410 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:08.410 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:09.598 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:09.598 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:09.598 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:10.451 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:10.451 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:10.451 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:11.613 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:11.613 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:11.613 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:12.495 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:12.495 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:12.495 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:13.660 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:13.660 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:13.660 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:14.515 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:14.515 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:14.515 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:14.617 # master feed slave PING
+3537:M 03 Jun 09:45:15.723 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:15.723 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:15.723 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:16.585 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:16.585 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:16.585 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:17.822 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:17.822 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:17.822 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:18.608 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:18.608 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:18.608 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:19.898 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:19.898 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:19.898 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:20.636 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:20.636 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:20.636 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:21.968 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:21.968 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:21.968 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:22.723 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:22.723 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:22.723 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:24.064 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:24.064 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:24.064 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:24.755 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:24.756 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:24.756 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:24.890 # master feed slave PING
+3537:M 03 Jun 09:45:26.108 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:26.108 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:26.108 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:26.838 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:26.838 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:26.838 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:28.188 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:28.188 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:28.188 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:28.898 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:28.898 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:28.898 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:30.245 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:30.245 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:30.246 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:30.948 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:30.948 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:30.948 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:32.386 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:32.386 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:32.386 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:32.971 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:32.971 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:32.971 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:34.458 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:34.458 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:34.458 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:34.976 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:34.976 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:34.976 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:35.105 # master feed slave PING
+3537:M 03 Jun 09:45:36.495 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:36.495 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:36.495 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:36.981 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:36.981 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:36.981 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:38.630 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:38.630 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:38.631 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:39.046 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:39.046 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:39.046 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:40.730 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:40.730 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:40.730 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:41.068 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:41.068 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:41.068 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:42.768 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:42.768 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:42.768 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:43.071 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:43.071 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:43.071 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:44.870 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:44.870 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:44.870 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:45.108 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:45.108 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:45.108 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:45.321 # master feed slave PING
+3537:M 03 Jun 09:45:46.938 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:46.938 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:46.938 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:47.163 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:47.163 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:47.163 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:49.040 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:49.040 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:49.040 # master feed slave 10.1.80.152,27379,5456554cb599837dffc5a212827e57af3f967101,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:45:49.167 # master feed slave PUBLISH
+3537:M 03 Jun 09:45:49.167 # master feed slave __sentinel__:hello
+3537:M 03 Jun 09:45:49.168 # master feed slave 10.1.80.152,26379,65d167cde521750e35a4f4bc1433b14eb4930fde,0,mymaster,10.1.80.152,6379,0
+3537:M 03 Jun 09:47:29.480 # Connection with slave 10.1.80.152:7379 lost.
+3537:S 03 Jun 09:47:39.538 * SLAVE OF 10.1.80.152:7379 enabled (user request from 'id=36 addr=10.1.80.152:46343 fd=35 name=sentinel-65d167cd-cmd age=10 idle=0 flags=x db=0 sub=0 psub=0 multi=3 qbuf=0 qbuf-free=32768 obl=36 oll=0 omem=0 events=rw cmd=exec')
+3537:S 03 Jun 09:47:39.540 # CONFIG REWRITE executed with success.
+3537:S 03 Jun 09:47:40.552 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:40.553 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:40.553 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:40.553 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:40.554 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:40.588 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:13073
+3537:S 03 Jun 09:47:40.611 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:40.612 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:41.577 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:41.578 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:41.578 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:41.578 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:41.579 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:41.581 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:13233
+3537:S 03 Jun 09:47:41.634 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:41.635 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:42.597 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:42.598 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:42.598 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:42.598 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:42.599 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:42.601 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:13393
+3537:S 03 Jun 09:47:42.657 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:42.658 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:43.623 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:43.624 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:43.624 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:43.624 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:43.625 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:43.627 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:13553
+3537:S 03 Jun 09:47:43.679 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:43.681 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:44.641 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:44.641 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:44.641 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:44.642 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:44.642 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:44.644 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:13713
+3537:S 03 Jun 09:47:44.702 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:44.704 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:45.661 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:45.662 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:45.662 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:45.662 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:45.662 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:45.664 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:13873
+3537:S 03 Jun 09:47:45.725 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:45.726 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:46.681 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:46.681 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:46.682 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:46.682 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:46.682 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:46.684 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:14047
+3537:S 03 Jun 09:47:46.750 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:46.752 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:47.701 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:47.702 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:47.702 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:47.702 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:47.703 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:47.705 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:14207
+3537:S 03 Jun 09:47:47.773 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:47.775 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:48.719 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:48.720 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:48.720 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:48.720 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:48.720 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:48.722 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:14367
+3537:S 03 Jun 09:47:48.801 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:48.803 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:49.745 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:49.746 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:49.746 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:49.746 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:49.746 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:49.748 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:14367
+3537:S 03 Jun 09:47:49.826 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:49.827 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:50.767 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:50.768 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:50.768 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:50.768 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:50.769 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:50.771 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:14664
+3537:S 03 Jun 09:47:50.849 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:50.850 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:51.792 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:51.793 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:51.793 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:51.793 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:51.794 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:51.795 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:14664
+3537:S 03 Jun 09:47:51.874 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:51.876 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:52.816 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:52.816 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:52.816 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:52.816 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:52.817 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:52.819 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:14961
+3537:S 03 Jun 09:47:52.897 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:52.898 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:53.873 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:53.874 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:53.874 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:53.874 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:53.875 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:53.876 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:14961
+3537:S 03 Jun 09:47:53.953 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:53.954 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:54.965 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:54.966 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:54.966 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:54.966 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:54.967 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:54.968 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:15258
+3537:S 03 Jun 09:47:55.029 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:55.031 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:56.031 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:56.031 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:56.031 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:56.032 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:56.032 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:56.034 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:15258
+3537:S 03 Jun 09:47:56.095 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:56.096 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:57.048 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:57.049 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:57.049 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:57.049 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:57.050 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:57.052 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:15569
+3537:S 03 Jun 09:47:57.115 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:57.117 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:58.071 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:58.072 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:58.072 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:58.072 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:58.072 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:58.074 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:15569
+3537:S 03 Jun 09:47:58.138 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:58.139 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:47:59.094 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:47:59.094 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:47:59.095 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:47:59.095 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:47:59.095 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:47:59.097 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:15866
+3537:S 03 Jun 09:47:59.158 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:47:59.160 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:00.114 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:00.115 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:00.115 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:00.115 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:00.116 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:00.118 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:15866
+3537:S 03 Jun 09:48:00.183 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:00.185 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:01.139 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:01.140 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:01.140 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:01.141 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:01.141 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:01.143 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:16163
+3537:S 03 Jun 09:48:01.209 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:01.210 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:02.170 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:02.171 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:02.171 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:02.171 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:02.171 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:02.174 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:16163
+3537:S 03 Jun 09:48:02.236 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:02.238 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:03.190 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:03.190 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:03.191 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:03.191 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:03.191 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:03.193 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:16460
+3537:S 03 Jun 09:48:03.257 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:03.258 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:04.213 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:04.213 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:04.213 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:04.214 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:04.215 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:04.216 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:16460
+3537:S 03 Jun 09:48:04.282 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:04.284 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:05.236 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:05.236 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:05.236 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:05.237 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:05.237 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:05.239 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:16757
+3537:S 03 Jun 09:48:05.305 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:05.306 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:06.258 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:06.259 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:06.259 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:06.259 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:06.260 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:06.261 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:16757
+3537:S 03 Jun 09:48:06.328 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:06.329 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:07.278 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:07.279 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:07.279 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:07.279 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:07.280 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:07.282 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:17068
+3537:S 03 Jun 09:48:07.347 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:07.349 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:08.301 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:08.301 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:08.301 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:08.302 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:08.302 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:08.304 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:17068
+3537:S 03 Jun 09:48:08.367 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:08.369 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:09.320 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:09.321 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:09.321 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:09.321 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:09.322 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:09.324 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:17365
+3537:S 03 Jun 09:48:09.385 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:09.386 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:10.335 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:10.336 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:10.336 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:10.336 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:10.337 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:10.339 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:17365
+3537:S 03 Jun 09:48:10.405 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:10.407 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:11.354 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:11.354 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:11.354 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:11.355 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:11.355 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:11.357 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:17662
+3537:S 03 Jun 09:48:11.424 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:11.426 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:12.373 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:12.373 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:12.373 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:12.374 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:12.374 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:12.376 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:17662
+3537:S 03 Jun 09:48:12.450 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:12.451 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:13.453 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:13.453 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:13.453 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:13.453 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:13.454 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:13.455 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:17959
+3537:S 03 Jun 09:48:13.532 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:13.534 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:14.497 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:14.498 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:14.498 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:14.498 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:14.499 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:14.501 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:17959
+3537:S 03 Jun 09:48:14.564 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:14.565 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:15.520 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:15.520 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:15.521 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:15.521 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:15.521 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:15.523 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:18256
+3537:S 03 Jun 09:48:15.582 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:15.584 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:16.545 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:16.546 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:16.546 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:16.546 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:16.549 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:16.551 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:18256
+3537:S 03 Jun 09:48:16.606 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:16.606 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:17.569 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:17.570 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:17.570 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:17.571 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:17.571 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:17.573 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:18567
+3537:S 03 Jun 09:48:17.627 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:17.628 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:18.592 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:18.592 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:18.593 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:18.593 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:18.593 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:18.595 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:18567
+3537:S 03 Jun 09:48:18.646 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:18.648 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:19.614 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:19.615 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:19.615 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:19.615 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:19.616 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:19.618 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:18864
+3537:S 03 Jun 09:48:19.669 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:19.670 # Failed trying to rename the temp DB into dump.rdb in MASTER <-> SLAVE synchronization: Permission denied
+3537:S 03 Jun 09:48:20.636 * Connecting to MASTER 10.1.80.152:7379
+3537:S 03 Jun 09:48:20.637 * MASTER <-> SLAVE sync started
+3537:S 03 Jun 09:48:20.637 * Non blocking connect for SYNC fired the event.
+3537:S 03 Jun 09:48:20.637 * Master replied to PING, replication can continue...
+3537:S 03 Jun 09:48:20.637 * Partial resynchronization not possible (no cached master)
+3537:S 03 Jun 09:48:20.638 * Full resync from master: bc58e37312175d541838b7bdf8859f8e62235bc3:18864
+3537:S 03 Jun 09:48:20.693 * MASTER <-> SLAVE sync: receiving 18 bytes from master
+3537:S 03 Jun 09:48:20.693 * MASTER <-> SLAVE sync: Flushing old data
+3537:S 03 Jun 09:48:20.693 * MASTER <-> SLAVE sync: Loading DB in memory
+3537:S 03 Jun 09:48:20.694 * MASTER <-> SLAVE sync: Finished with success
+3537:signal-handler (1464918530) Received SIGTERM scheduling shutdown...
+3537:S 03 Jun 09:48:50.850 # User requested shutdown...
+3537:S 03 Jun 09:48:50.850 * Saving the final RDB snapshot before exiting.
+3537:S 03 Jun 09:48:50.855 * DB saved on disk
+3537:S 03 Jun 09:48:50.855 * Removing the pid file.
+3537:S 03 Jun 09:48:50.855 # Redis is now ready to exit, bye bye...
